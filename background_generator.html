@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background Generator</title>
+	<style type="text/css">
+		body{
+			background:linear-gradient(to right,red,yellow);	
+		}
+		.container{
+			text-align: center;
+		}
+		h1{
+			font-size: 80px;
+			letter-spacing: 30px;
+			font-weight: bold;
+			font-style: oblique;
+		}
+		.color #left{
+			width:100px;
+			height:50px;
+			margin-right:50px;
+
+		}
+		.color #right{
+			width:100px;
+			height:50px;
+			margin-left:50px;	
+		}
+		#caption,#colorValue{
+			font-size:2em;
+		}
+		#random{
+			text-shadow: 3px 2px 4px;
+			background: transparent;
+			background-color: green;
+			border-radius: 10px;
+			width: 100px;
+			height:20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Background Generator </h1>
+		<div class="color">
+			<input type="color" id="left" value="#ff0000">
+			<input type="color" id="right" value="#00ff00">
+		</div>
+		<p id="caption">Current Css Background</p>
+		<p id="colorValue"></p>
+		<button id="random">Random</button>
+	</div>
+	<script type="text/javascript" src="background_generator.js"></script>
+</body>
+</html>
